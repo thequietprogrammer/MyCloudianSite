@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MySite</title>
+
+        <link rel="icon" href="data/favicon.svg">
+        <link rel="stylesheet" href="data/css/main.css">
+        <script src="data/js/main.js"></script>
+    </head>
+    <body>
+        <div style="height:0.5em;background-image:linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0));"></div>
+        <div id="mainDiv" class="row">
+            <div id="navigationArea" class="col-3 col-m-3">
+                <ul style="list-style-type:none;margin:0px;padding:0px;">
+                    <li>
+                        <button id="navLugares" class="navButton activeNav" onclick="changeTab(this.id)">Lugares</button>
+                    </li>
+                    <li>
+                        <button id="navPersonagens" class="navButton" onclick="changeTab(this.id)">Personagens</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="textArea" class="col-9 col-m-9">
+                <div id="tabLugares" class="hide active">
+                    <h3 align="right"><i>O Acampamento</i></h3>
+                    <i>Não olhem para as árvores, ou elas vão olhar de volta. E você não vai querer que seu fim seja com uma árvore olhando para você.</i><br/><p style="text-align:right;">~ Excerto do Guia das Nações, no palácio de Theodri</p>
+                    <p>Lar de uma antiga tribo guerreira, inicialmente era apenas o que o nome revelava: um acampamento. Com o passar dos anos, o local foi se desenvolvendo com a agricultura, longe de outras civilizações. Acabou por se tornar uma nação baseada em tradições, tendo como principal ponto o combate. Mesmo pelo seu tamanho que não passa do de uma cidade comum, os outros reinos consideram o Acampamento como um de igual poder: não poderia existir, em situações comuns, um guerreiro mais valioso do que os desse lugar.</p>
+                    <p>As festividades locais normalmente não aceitam estrangeiros, o que é péssimo para quem quiser comparecer, pois são ditas as melhores que existem, com música, teatro, dança, comida e atividades que não são encontradas em nenhum outro lugar do continente de Virza.</p>
+                    <hr/>
+                    
+                    <h3 align="right"><i>Sallasvar</i></h3>
+                    <i>Naquelas terras poucas pessoas tiveram a ousadia de se aventurar, mas saibam que aqueles que vivem o que Sallasvar oferece mudam profundamente.</i><br/><p style="text-align:right;">~ Gjin, monge-secretário de Yraamo</p>
+                    <p>Um deserto cinza e escuro, aonde o Sol quase nunca vai, com longos vales rochosos escarpados e sem caminhos fáceis. Em sua região central, Sallasvar se transforma numa larga planície, com chão em rocha sólida e uma certa espécie de poeira mística correndo interminavelmente na atmosfera. Não possui leitos de rios e nem vegetação, pois existe pelos vales uma energia que desintegra axiomas formulados pela natureza. Essa energia pode ser vista na delineação dos vales e colinas, tendo um contorno purpúreo e róseo, fruto da mudança na refração da luz solar.</p>
+                    <p>Normalmente não são comuns existirem histórias verdadeiras sobre Sallasvar. No Acampamento, são mantidos trechos de runas escritas por Johan que mencionam as mudanças espirituais sofridas por ele ao ir para lá. Um compilado de músicas, lendas, poemas e escritos foram averiguados e selecionados em um volume guardado na Biblioteca de Yraamo. Desse volume, seguem alguns trechos:</p>
+                    <p>"... e parece haver propriedades mágicas. Ao chegar na planície, círculos são vistos flutuando, ilustrando uma espécie de aura que reside ali. Parecem pertencer aos outros seres que estão em estado de concentração. Mas por estar sozinho, uma singela vontade de ficar ali toma conta do seu corpo instantaneamente, sendo o motivo mais provável de pessoas desaparecerem depois de viajar para lá."</p>
+                    <p>"... virei e olhei meu aredor: estava sozinho. Meus companheiros de viagem tinham sumido sem deixar nenhuma pista, nehum rastro. Minha única opção era seguir em frente, até a região central. [...] Chegando lá, pisei no chão estranho que se expandia em minha frente. A névoa era muito densa, mas percebi momentos depois um círculo de formar como um aro no ar, brilhante, em minha frente. Achei aquilo muito estranho, então continuei a caminhar, lentamente perdendo a noção de espaço, até que sentei e fechei os olhos. Só me lembro disso. Depois, me percebi na fronteira de Sallasvar, com apenas alguns poucos dos meus companheiros acampados mais à frente, nas terras da família Ellabaelle."</p>
+                    <hr/>
+                </div>
+                <div id="tabPersonagens" class="hide">
+                    <h3 align="right">O Artesão</h3>
+                    <i>Ele correu de Sigdra até a Tempestade Sem Fim por 9 dias, só para salvar seu companheiro. E lembrem-se que ele não parou de correr por 9 dias. Um corpo humano normal morreria em 3 dias. Então como?</i><br/><p style="text-align:right;">~ Bate-papo em uma escola de Sigdra.</p>
+                    <p>O último dos Três Fundadores a ser descoberto, “Artesão” é como chamavam Halsa, por seu feitos manipuladores com a matéria. Ao seu nascimento, ficou com uma parte da graça das duas Luas Irmãs, e se desenvolveu com muita dificuldade em sua trajetória. Por Halsa não ter sido um dos dois Abençoados, Mestre Brike, o mentor dos Três Fundadores, encontrou o Artesão em um torneio de luta por acaso, nos largos campos do noroeste de Virza.</p>
+                    <p>Sua maior criação foi o corpo de Daleon: uma mistura perfeita entre carne, energia e vida. O processo deixou o Artesão cego, mas suas capacidades foram ampliadas pela distribuição de runas que usou em seu corpo.</p>
+                    <p>Não se pode falar no Artesão sem falar da Komorebi, o artefato mais perigoso que existe. Ninguém sabe onde a espada está, mas sabe-se que foi o Artesão que a criou, com a vida de um humilde ferreiro, no Vulcão do Rompimento, ao sudeste de Virza.</p>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Licença -->
+        <footer>
+            <div style="height:0.5em;background-image:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,1));"></div>
+            <div style="background-color:black;color:rgb(220,220,230);text-align:center;">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">MySite</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/thequietprogrammer" property="cc:attributionName" rel="cc:attributionURL">thequietprogrammer</a> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional</a>.
+            </div>
+        </footer>
+    </body>
+</html>
