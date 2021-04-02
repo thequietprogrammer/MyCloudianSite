@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>MySite</title>
+        <title>MyCloudianSite</title>
 
         <link rel="icon" href="data/favicon.svg">
         <link rel="stylesheet" href="data/css/main.css">
@@ -12,6 +12,9 @@
     </head>
     <body>
         <div style="height:0.5em;background-image:linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0));"></div>
+        <header>
+            <h1 style="color:#e8fbff;text-align:center;text-decoration:underline;">MyCloudianSite</h1>
+        </header>
         <div id="mainDiv" class="row">
             <div id="navigationArea" class="col-3 col-m-3">
                 <ul style="list-style-type:none;margin:0px;padding:0px;">
@@ -21,14 +24,22 @@
                     <li>
                         <button id="navPersonagens" class="navButton" onclick="changeTab(this.id)">Personagens</button>
                     </li>
+                    <li>
+                        <button id="navHistorias" class="navButton" onclick="changeTab(this.id)">Histórias</button>
+                    </li>
+                    <hr/>
+                    <li>
+                        <button id="navExperiencias" class="navButton" onclick="changeTab(this.id)">Algumas experiências</button>
+                    </li>
                 </ul>
             </div>
             <div id="textArea" class="col-9 col-m-9">
                 <div id="tabLugares" class="hide active">
                     <h3 align="right"><i>O Acampamento</i></h3>
-                    <i>Não olhem para as árvores, ou elas vão olhar de volta. E você não vai querer que seu fim seja com uma árvore olhando para você.</i><br/><p style="text-align:right;">~ Excerto do Guia das Nações, no palácio de Theodri</p>
-                    <p>Lar de uma antiga tribo guerreira, inicialmente era apenas o que o nome revelava: um acampamento. Com o passar dos anos, o local foi se desenvolvendo com a agricultura, longe de outras civilizações. Acabou por se tornar uma nação baseada em tradições, tendo como principal ponto o combate. Mesmo pelo seu tamanho que não passa do de uma cidade comum, os outros reinos consideram o Acampamento como um de igual poder: não poderia existir, em situações comuns, um guerreiro mais valioso do que os desse lugar.</p>
+                    <i>Não olhem para as árvores, ou elas vão olhar de volta. E você não vai querer que seu fim seja com uma árvore olhando você.</i><br/><p style="text-align:right;">~ Excerto do Guia das Nações, no palácio de Theodri</p>
+                    <p>Lar de uma antiga tribo guerreira, inicialmente era apenas o que o nome revelava: um acampamento, e com o passar dos anos, o local foi se desenvolvendo com a agricultura, longe de outras civilizações. Acabou por se tornar uma nação baseada em cultura e misticismo, tendo como principal ponto o combate. Apesar do seu tamanho, que não passa do de uma cidade comum, os outros reinos consideram o Acampamento como um de igual poder: não poderia existir, em situações comuns, um guerreiro mais valioso do que os desse lugar.</p>
                     <p>As festividades locais normalmente não aceitam estrangeiros, o que é péssimo para quem quiser comparecer, pois são ditas as melhores que existem, com música, teatro, dança, comida e atividades que não são encontradas em nenhum outro lugar do continente de Virza.</p>
+                    <p>O Acampamento é liderado por três pessoas, que são eleitas por cálculos baseados no Livro das Yeras. Atualmente, os líderes são: Marçal, Seriffa, e Bian-Gossa. Todos do Acampamento usam o Valor, e existem lendas que dizem que a Yera de Johan floresceu aqui, o que pode explicar o poderio do reino.</p>
                     <hr/>
                     
                     <h3 align="right"><i>Sallasvar</i></h3>
@@ -40,12 +51,22 @@
                     <hr/>
                 </div>
                 <div id="tabPersonagens" class="hide">
+                    <h3 align="right">Johan</h3>
+                    <p>Johan foi a primeira pessoa conhecida a ser abençoado por Liria, a primeira das Luas Irmãs. </p>
+                    <hr/>
+
                     <h3 align="right">O Artesão</h3>
                     <i>Ele correu de Sigdra até a Tempestade Sem Fim por 9 dias, só para salvar seu companheiro. E lembrem-se que ele não parou de correr por 9 dias. Um corpo humano normal morreria em 3 dias. Então como?</i><br/><p style="text-align:right;">~ Bate-papo em uma escola de Sigdra.</p>
                     <p>O último dos Três Fundadores a ser descoberto, “Artesão” é como chamavam Halsa, por seu feitos manipuladores com a matéria. Ao seu nascimento, ficou com uma parte da graça das duas Luas Irmãs, e se desenvolveu com muita dificuldade em sua trajetória. Por Halsa não ter sido um dos dois Abençoados, Mestre Brike, o mentor dos Três Fundadores, encontrou o Artesão em um torneio de luta por acaso, nos largos campos do noroeste de Virza.</p>
                     <p>Sua maior criação foi o corpo de Daleon: uma mistura perfeita entre carne, energia e vida. O processo deixou o Artesão cego, mas suas capacidades foram ampliadas pela distribuição de runas que usou em seu corpo.</p>
                     <p>Não se pode falar no Artesão sem falar da Komorebi, o artefato mais perigoso que existe. Ninguém sabe onde a espada está, mas sabe-se que foi o Artesão que a criou, com a vida de um humilde ferreiro, no Vulcão do Rompimento, ao sudeste de Virza.</p>
                     <hr/>
+                </div>
+                <div id="tabHistorias" class="hide">
+                    <p>Uma história curiosa, realmente...</p>
+                </div>
+                <div id="tabExperiencias" class="hide">
+                    <p>✌</p>
                 </div>
             </div>
         </div>
@@ -54,7 +75,7 @@
         <footer>
             <div style="height:0.5em;background-image:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,1));"></div>
             <div style="background-color:black;color:rgb(220,220,230);text-align:center;">
-                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">MySite</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/thequietprogrammer" property="cc:attributionName" rel="cc:attributionURL">thequietprogrammer</a> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional</a>.
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">MyCloudianSite</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/thequietprogrammer" property="cc:attributionName" rel="cc:attributionURL">thequietprogrammer</a> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional</a>.
             </div>
         </footer>
     </body>

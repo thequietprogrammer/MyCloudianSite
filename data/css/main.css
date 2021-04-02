@@ -14,6 +14,9 @@ body {
     background-color: #666;
     margin: 0px;
 }
+#navigationArea ul {
+    line-height: 1.5em;
+}
 .navButton {
     background-color: #e8fbff;
     border: 2px solid #e8fbff;
@@ -39,6 +42,9 @@ hr {
     border-width: 0px;
     color: #000;
     height: 2px;
+}
+canvas {
+    
 }
 footer a:link {
     color: #bbb;
