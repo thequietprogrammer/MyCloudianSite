@@ -46,6 +46,10 @@ hr {
 canvas {
     margin: 12px;
 }
+.roundBorder {
+    border:2px solid #000;
+    border-radius:5px;
+}
 footer a:link {
     color: #bbb;
 }
